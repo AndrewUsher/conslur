@@ -7,11 +7,17 @@ class Conslur {
    * @param {number} options.indentSize - Indent size for log
    * @constructor
    */
-  constructor({ indentSize }) {
+  constructor({ indentSize = 2 }) {
     this.indentSize = ' '.repeat(options.indentSize)
   }
 
-  generateLog({ toLog, indentSize }) {
+  /**
+   *
+   * @param {Object} options - Options for generated log
+   * @param {number} options.toLog - Item to log
+   * @param {number} options.indentSize - Indent size for log
+   */
+  generateLog({ toLog, indentSize = this.indentSize }) {
     const logType = kindOf(toLog)
     let log = ''
     let startsWith = ''
@@ -22,5 +28,3 @@ class Conslur {
     }
   }
 }
-
-const log = new Conslur({ indentSize: 4 })
