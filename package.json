@@ -1,0 +1,10 @@
+{
+  "name": "conslur",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "kind-of": "^6.0.2",
+    "kleur": "^2.0.1"
+  }
+}
