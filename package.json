@@ -5,6 +5,6 @@
   "license": "MIT",
   "dependencies": {
     "kind-of": "^6.0.2",
-    "kleur": "^2.0.1"
+    "kleur": "^3.0.3"
   }
 }
